@@ -26,5 +26,3 @@ const sayHello = (name = "Human") => `Hello ${name}`;     // default parameter �
 
 const meiis = sayHello();     // const meiis = sayHello("human"); default값이 없을 때 함수호출하면서 args 넣는 것과 같음. 
 console.log(meiis);
-
-
