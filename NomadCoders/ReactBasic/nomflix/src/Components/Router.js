@@ -8,13 +8,13 @@ import Search from 'Routes/Search';
 export default () => (
 	<Router>
     <>
-    <Header />
-		<Switch>
-			<Route path="/" exact component={HOME} />
-			<Route path="/tv" exact component={TV} />
-			<Route path="/search" component={Search} />
-			<Redirect from="*" to="/" />
-		</Switch>
+      <Header />
+      <Switch>
+        <Route path="/" exact component={HOME} />
+        <Route path="/tv" exact component={TV} />
+        <Route path="/search" component={Search} />
+        <Redirect from="*" to="/" />
+      </Switch>
     </>
 	</Router>
 );
