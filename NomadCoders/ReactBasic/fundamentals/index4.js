@@ -12,6 +12,10 @@ const addSmile = (day, index) => `#${index + 1} ${day} `
 const addSmileDays = days.map(addSmile);
 console.log(addSmileDays);
 
+// result: (5) ["#1 Mon ", "#2 Tue ", "#3 Wed ", "#4 Thurs ", "#5 Fri "]
+
 // # 축약식
 const smilingDay = days.map(day => `:) ${day} `);
 console.log(smilingDay);
+
+// result : (5) [":) Mon ", ":) Tue ", ":) Wed ", ":) Thurs ", ":) Fri "]
