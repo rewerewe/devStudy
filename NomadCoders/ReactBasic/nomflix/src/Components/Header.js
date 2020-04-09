@@ -22,8 +22,11 @@ const List = styled.ul`
 `;
 
 const Item = styled.li`
-  width: 50px;
+  width: 80px;
+  height: 50px;
   text-align: center;
+border-bottom: 5px solid 
+  ${props => (props.current ? "#3498db" : "transparent")};
 `;
 
 const SLink = styled(Link)`
@@ -36,13 +39,13 @@ const SLink = styled(Link)`
 export default () => (
 	<Header>
 		<List>
-			<Item>
+			<Item current={false}>
 				<SLink to="/">Movies</SLink>
 			</Item>
-			<Item>
+			<Item current={true}>
 				<SLink to="/tv">TV</SLink>
 			</Item>
-			<Item>
+			<Item current={false}>
 				<SLink to="/search">Search</SLink>
 			</Item>
 		</List>
