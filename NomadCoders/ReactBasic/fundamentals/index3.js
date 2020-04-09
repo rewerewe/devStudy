@@ -19,6 +19,7 @@ class Baby extends Human {
   }
 }
 
+
 const meiis = new Human("Imme", "Jeong");
 // constructor는 Class를 생성할 때 필요한 무언가 가지고 있다.
 // Class는 constructor의 이부분을 확장할 수 있다.
