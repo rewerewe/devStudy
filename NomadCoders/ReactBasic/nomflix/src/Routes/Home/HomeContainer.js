@@ -1,4 +1,4 @@
-import React from "reacr";
+import React from "react";
 import HomePresenter from "./HomePresenter";
 
 export default class extends React.Component {
@@ -12,12 +12,14 @@ export default class extends React.Component {
 
   render() {
     const { nowPlaying, upcoming, popular, error, loading } = this.state;
-    <HomePresenter
-      nowPlaying={nowPlaying}
-      upcoming={upcoming}
-      popular={popular}
-      error={error}
-      loading={loading}
-    />;
+    return (
+      <HomePresenter
+        nowPlaying={nowPlaying}
+        upcoming={upcoming}
+        popular={popular}
+        error={error}
+        loading={loading}
+      />
+    );
   }
 }
