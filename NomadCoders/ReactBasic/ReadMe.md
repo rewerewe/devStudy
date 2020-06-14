@@ -153,10 +153,10 @@ npm add Axios
 
 - API verb, functions을 화면 안에 넣는 작업 중 하나.
 
-  [동작원리]
+  [작동원리]
 
 - container = data (state 값 있음) -> api 호출 -> 로직 처리
-- presenter = style (state 값 없음) -> 데이터 보여줌 (함수형 컴포넌트임)
+- presenter = style (state 값 없음) -> 데이터 보여줌 (API 모르고, 클래스 없고, 그냥 함수형 컴포넌트임)
 
   [사용법]
 
